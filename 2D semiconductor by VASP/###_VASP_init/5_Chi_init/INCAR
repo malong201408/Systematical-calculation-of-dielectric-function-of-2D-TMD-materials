@@ -1,0 +1,21 @@
+# Frequency dependent dielectric tensor with and
+# without local field effects in RPA
+# N.B.: beware one first has to have done a
+# calculation with ALGO=Exact, LOPTICS=.TRUE.
+# and a reasonable number of virtual states (see above)
+ALGO = CHI
+LRPA =.TRUE. (#To include local field effect on the Hartree level only)
+NOMEGA = 300  (#specifies the number of (imaginary) frequency and imaginary time grid points. For 6󬝲 k-points/atom NOMEGA can be usually increased to 200-300)
+LSPECTRAL = .TRUE. (#the imaginary part of the independent particle polarizability is calculated first, and afterwards the full independent particle polarizability is determined using a Kramers-Kronig (or Hilbert) transform)
+
+# be sure to take the same number of bands as for
+# the LOPTICS=.TRUE. calculation, otherwise the
+# WAVEDER file is not read correctly
+NBANDS = 80  (#Consistent with INCAR in IPA)
+
+ISMEAR =  0
+SIGMA  =  0.05
+EDIFF  = 1.E-8
+
+LWAVE = .FALSE.
+LCHARG= .FALSE.
