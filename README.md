@@ -21,4 +21,4 @@ GPAW (for metals):
 
 Download the configurations from C2DB database, store the original files in xyz_Names folder in ###GPAW_init. Then use ZZname.sh file to translate them into POSCAR files. Copy and paste the new files into xyz folder. 
 
-Run 1_XXX to 6_XXX in sequence, where 3_gpaw_sigma generates the surface conductivity, 4_gpaw_NF initiates the calculation of the near field radiation power between two layers, 5_gpaw_Q_collect and 6_gpaw_HTP extract the data and provide Heat Transport Power (HTP) data in Originlab format for plotting.
+In the main folder, run 1_XXX to 6_XXX in sequence, where 3_gpaw_sigma generates the surface conductivity, 4_gpaw_NF initiates the calculation of the near field radiation power between two layers, 5_gpaw_Q_collect and 6_gpaw_HTP extract the data and provide Heat Transport Power (HTP) data in Originlab format for plotting.
